@@ -8,14 +8,15 @@ import { Course, CourseList, SemesterRepository } from '../domain';
 })
 export class SemestersComponent implements OnInit {
   private courses: CourseList;
+  private semesters: CourseList[];
   private loaded = false;
   constructor(
     private semesterRepository: SemesterRepository
   ) { }
 
   ngOnInit() {
-    this.semesterRepository.getBySemester('S18')
-      .subscribe(x => this.onSemesterLoaded(x));
+    this.semesterRepository.getAll()
+      .subscribe(x => this.onSemestersLoaded(x));
   }
 
   private onSemesterLoaded(courses: CourseList){
@@ -24,5 +25,10 @@ export class SemestersComponent implements OnInit {
     console.log(this.courses);
 
   }
+  private onSemestersLoaded(semesters: CourseList[]){
+    this.semesters = semesters;
+    this.loaded = true;
+    console.log(this.courses);
 
+  }
 }
