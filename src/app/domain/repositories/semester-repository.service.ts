@@ -14,11 +14,10 @@ export class SemesterRepository {
     ) {}
 
     public getAll(): Observable<CourseList[]> {
-        return this.httpClient.get<CourseList[]>(this.endpoint).catch(x => this.handleException(x));
+        return this.httpClient.get<CourseList[]>(this.endpoint);
     }
     public getBySemester(semester: string): Observable<CourseList> {
-        return this.httpClient.get<CourseList>(`${this.endpoint}/${semester}`)
-        .catch( x => this.handleException(x) );
+        return this.httpClient.get<CourseList>(`${this.endpoint}/${semester}`);
     }
     protected handleException(exception: any) {
         const message = `${exception.status} : ${exception.statusText}\r\n${exception.body.error}`;
