@@ -1,5 +1,5 @@
 import {Course} from '../';
-export class CourseList{
+export class CourseList {
     semester?: string;
     courses?: Course[];
 }
