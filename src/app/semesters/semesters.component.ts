@@ -19,10 +19,14 @@ export class SemestersComponent implements OnInit {
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-      this.s = params['semester']; // In a real app: dispatch action to load the details here.
+      this.s = params['semester'];
+      this.initializeState(); // reset and set based on new parameter this time
     });
     this.semesterRepository.getBySemester(this.s)
       .subscribe(x => this.onCoursesLoaded(x));
+  }
+  private initializeState() {
+      // location.reload();
   }
   private onCoursesLoaded(courses: CourseList) {
     this.semester = courses[0];
