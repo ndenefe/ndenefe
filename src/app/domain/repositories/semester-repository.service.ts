@@ -17,7 +17,7 @@ export class SemesterRepository {
         return this.httpClient.get<CourseList[]>(this.endpoint);
     }
     public getBySemester(semester: string): Observable<CourseList> {
-        return this.httpClient.get<CourseList>(`${this.endpoint}/${semester}`);
+        return this.httpClient.get<CourseList>(`${this.endpoint}/?semester=${semester}`);
     }
     protected handleException(exception: any) {
         const message = `${exception.status} : ${exception.statusText}\r\n${exception.body.error}`;
