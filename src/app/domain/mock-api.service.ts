@@ -10,11 +10,12 @@ export class MockApi implements InMemoryDbService {
                 courses: [
                 {id: 'CSE 3330-801', name: 'Database Concepts', type: 'Lecture'},
                 {id: 'CSE 3330-N12C', name: 'Database Concepts', type: 'Lab'},
-                {id: 'CSE 3339-801', name: 'Information Assurance and Security', type: 'Lecture'},
-                {id: 'CSE 3339-N13', name: 'Information Assurance and Security', type: 'Lab'},
+                {id: 'CSE 3339-801', name: 'Information Assurance & Security', type: 'Lecture'},
+                {id: 'CSE 3339-N13', name: 'Information Assurance & Security', type: 'Lab'},
                 {id: 'CSE 3353-001', name: 'Fundamentals of Algorythms', type: 'Lecture'},
                 {id: 'JAPN 1402-801', name: 'Beginning Japanese: 2nd Term', type: 'Lecture'},
                 {id: 'JAPN 1402-N10', name: 'Beginning Japanese: 2nd Term', type: 'Lab'},
+                {id: 'ANTH 3319-001', name: 'Humanity & Global Env Change', type: 'Lecture'}
                 ]
             },
             {

@@ -1,1 +1,18 @@
-<h1>{{semester}}</h1>
+<table class="table table-striped" *ngIf="loaded">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">{{s}}</th>
+            <th scope="col">Course ID</th>
+            <th scope="col">Course Name</th>
+            <th scope="col">Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let course of courses">
+            <td></td>
+            <td>{{course.id}}</td>
+            <td>{{course.name}}</td>
+            <td>{{course.type}}</td>
+        </tr>
+    </tbody>
+</table>
