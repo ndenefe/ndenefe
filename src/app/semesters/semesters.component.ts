@@ -12,6 +12,7 @@ export class SemestersComponent implements OnInit {
   private loaded;
   private semester: CourseList;
   private s;
+  private sem;
   private sub;
   constructor(
     private semesterRepository: SemesterRepository,
@@ -24,6 +25,32 @@ export class SemestersComponent implements OnInit {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.s = params['semester'];
+      switch ( this.s ) {
+        case 'S18': {
+          this.sem = 'Spring 2018';
+          break;
+        }
+        case 'F17': {
+          this.sem = 'Fall 2017';
+          break;
+        }
+        case 'S17': {
+          this.sem = 'Spring 2017';
+          break;
+        }
+        case 'F16': {
+          this.sem = 'Fall 2016';
+          break;
+        }
+        case 'S16': {
+          this.sem = 'Spring 2016';
+          break;
+        }
+        case 'F15': {
+          this.sem = 'Fall 2015';
+          break;
+        }
+      }
       this.cdRef.detectChanges();
       this.semesterRepository.getBySemester(this.s)
       .subscribe(x => this.onCoursesLoaded(x));
@@ -33,8 +60,6 @@ export class SemestersComponent implements OnInit {
     this.semester = courses[0];
     this.courses = this.semester.courses;
     this.loaded = true;
-    console.log(this.semester);
-    console.log(this.courses);
 
   }
 }
