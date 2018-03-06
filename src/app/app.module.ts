@@ -7,13 +7,15 @@ import { DomainModule } from './domain';
 import { AppComponent } from './app.component';
 import { SemestersComponent } from './semesters/semesters.component';
 import { JapaneseStudyComponent } from './japanese-study/japanese-study.component';
+import { ChapterHubComponent } from './chapter-hub/chapter-hub.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SemestersComponent,
-    JapaneseStudyComponent
+    JapaneseStudyComponent,
+    ChapterHubComponent
   ],
   imports: [
     BrowserModule,
