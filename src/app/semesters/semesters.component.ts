@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SemestersComponent implements OnInit {
   private courses: Course[];
-  private loaded;
+  loaded;
   private semester: CourseList;
   private s;
   private sem;

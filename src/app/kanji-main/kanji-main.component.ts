@@ -6,7 +6,7 @@ import { Kanji, KanjiList, KanjiRepository } from '../domain';
   styleUrls: ['./kanji-main.component.css']
 })
 export class KanjiMainComponent implements OnInit {
-  private loaded;
+  loaded;
   private kanjiList;
   constructor(private kanjiRepository: KanjiRepository) {
     this.loaded = false;

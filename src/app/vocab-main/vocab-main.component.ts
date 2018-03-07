@@ -7,7 +7,7 @@ import { JapanVocab, VocabList, VocabRepository } from '../domain';
 })
 export class VocabMainComponent implements OnInit {
   private vocabList: VocabList[];
-  private loaded;
+  loaded;
   constructor( private vocabRepository: VocabRepository) {
     this.loaded = false;
   }
