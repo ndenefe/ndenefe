@@ -1,6 +1,6 @@
 import { JapanVocab } from './japan-vocab';
 
 export class VocabList {
-    chapter?: number;
+    chapter?: string;
     vocab?: JapanVocab[];
 }

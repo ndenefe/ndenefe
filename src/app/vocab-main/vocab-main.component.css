@@ -1,0 +1,19 @@
+.tableP {
+    margin: 0;
+    padding: 0;
+}
+.chapter {
+    width: 10%;
+}
+.kana {
+    width: 15%;
+}
+.kanji {
+    width: 15%;
+}
+.meaning {
+    width:10%;
+}
+.type {
+    width:10%;
+}

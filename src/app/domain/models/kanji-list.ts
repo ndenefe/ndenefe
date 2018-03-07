@@ -1,6 +1,6 @@
 import { Kanji } from './kanji';
 
 export class KanjiList {
-    chapter?: number;
+    chapter?: string;
     kanji?: Kanji[];
 }

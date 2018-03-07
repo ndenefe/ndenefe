@@ -1,0 +1,27 @@
+<div class='row justify-content-center'>
+    <div class ='col-md-11' *ngIf="loaded">
+        
+        <table class="table table-striped table-light" *ngFor='let chapter of vocabList'>
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class='chapter'>{{chapter.chapter}}</th>
+                    <th scope="col" class='kana'>Kana</th>
+                    <th scope="col" class='kanji'>Kanji</th>
+                    <th scope="col" class='meaning'>Meanings</th>
+                    <th scope="col" class='type'>Type</th>
+                    <th scope="col" class='sidenotes'>Sidenotes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let word of chapter.vocab">
+                    <td></td>
+                    <td>{{word.kana}}</td>
+                    <td>{{word.kanji}}</td>
+                    <td><p class='tableP' *ngFor='let meaning of word.meaning'>{{meaning}}</p></td>
+                    <td>{{word.type}}</td>
+                    <td><p class='tableP' *ngFor='let note of word.sidenote'>{{note}}</p></td>
+                </tr>
+            </tbody>
+        </table>      
+    </div>
+</div>

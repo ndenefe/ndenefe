@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { SemestersComponent } from './semesters/semesters.component';
 import { JapaneseStudyComponent } from './japanese-study/japanese-study.component';
 import { ChapterHubComponent } from './chapter-hub/chapter-hub.component';
+import { HomeComponent } from './home/home.component';
+import { VocabMainComponent } from './vocab-main/vocab-main.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ChapterHubComponent } from './chapter-hub/chapter-hub.component';
     AppComponent,
     SemestersComponent,
     JapaneseStudyComponent,
-    ChapterHubComponent
+    ChapterHubComponent,
+    HomeComponent,
+    VocabMainComponent
   ],
   imports: [
     BrowserModule,
