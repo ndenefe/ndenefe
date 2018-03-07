@@ -10,6 +10,7 @@ import { JapaneseStudyComponent } from './japanese-study/japanese-study.componen
 import { ChapterHubComponent } from './chapter-hub/chapter-hub.component';
 import { HomeComponent } from './home/home.component';
 import { VocabMainComponent } from './vocab-main/vocab-main.component';
+import { KanjiMainComponent } from './kanji-main/kanji-main.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { VocabMainComponent } from './vocab-main/vocab-main.component';
     JapaneseStudyComponent,
     ChapterHubComponent,
     HomeComponent,
-    VocabMainComponent
+    VocabMainComponent,
+    KanjiMainComponent
   ],
   imports: [
     BrowserModule,

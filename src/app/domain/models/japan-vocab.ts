@@ -1,7 +1,7 @@
 export class JapanVocab {
     kana: string;
     kanji?: string;
-    meaning: string[];
+    meanings: string[];
     sidenote?: string[];
     type?: string;
 }

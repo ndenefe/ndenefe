@@ -1,0 +1,32 @@
+.chapter {
+    background-color:whitesmoke;
+    padding-bottom: .5vh;
+    padding-top: .5vh;
+    margin-bottom: 1vh;
+    vertical-align: center;
+    border-radius: 1vh;
+}
+.chapter h3 {
+    margin: 0;
+    padding: 0;
+}
+td h1 {
+    margin:0;
+    padding:0;
+    font-size: 5vw;
+}
+
+.kanji {
+    width: 10%;
+    text-align: center;
+}
+
+td {
+    vertical-align: center;
+}
+.col1 {
+    width: 40%;
+}
+.col2 {
+    width: 50%;
+}

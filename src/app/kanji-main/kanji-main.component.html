@@ -1,0 +1,24 @@
+<div class='row justify-content-center'>
+  <div class='col-md-11' *ngIf='loaded'>
+    <div *ngFor = 'let chapter of kanjiList'>
+      <div class='chapter container-fluid'>
+        <h3>{{chapter.chapter}}</h3>
+        
+      </div>
+      
+      <table class='table table-light' *ngFor='let kanji of chapter.kanji'>
+        <tbody>
+          <tr>
+            <td colspan='2' rowspan='2' class='kanji'><h1>{{kanji.kanji}}</h1></td>
+            <td class='col1'>meaning: {{kanji.meanings}}</td>
+            <td class='col2'>examples: {{kanji.examples}}</td>
+          </tr>
+          <tr>
+              <td>kun-yomi: {{kanji.kunyomi}}</td>
+              <td>on-yomi: {{kanji.onyomi}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

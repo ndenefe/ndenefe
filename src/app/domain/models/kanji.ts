@@ -1,5 +1,7 @@
 export class Kanji {
+    kanji: string;
     kunyomi?: string[];
     onyomi?: string[];
-    meanings?: string[];
+    meanings: string[];
+    examples?: string[];
 }

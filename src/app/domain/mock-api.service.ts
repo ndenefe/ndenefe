@@ -163,6 +163,22 @@ export class MockApi implements InMemoryDbService {
                     {type: 'expression', kana: '～っていいます', kanji: '～って言います', meaning: ['colloquial version of ～といいます']}
                 ]
             }
+          ],
+          kanji: [
+              {
+                  chapter: 'Chapter 4',
+                  kanji: [
+                      {kanji: '大', onyomi: ['ダイ', 'タイ'], kunyomi: ['おお', 'おお（きい）', 'おお（いに）'], meanings: ['big', 'large']
+                        , examples: ['大学生'] },
+                      {kanji: '学', onyomi: ['ガク', 'ガッ'], kunyomi: ['まな（ぶ）'], meanings: ['to study', 'learn']
+                        , examples: ['学校', '大学']  },
+                      {kanji: '校', onyomi: ['コウ'], meanings: ['school'], examples: ['学校'] },
+                      {kanji: '先', onyomi: ['セン'], kunyomi: ['さき'], meanings: ['to study', 'learn']
+                        , examples: ['先生'] },
+                      {kanji: '生', onyomi: ['セイ'], kunyomi: ['なま', 'う（まれる）'], meanings: ['life', 'to live']
+                        , examples: ['学生', '先生'] }
+                  ]
+              }
           ]
         };
     }
